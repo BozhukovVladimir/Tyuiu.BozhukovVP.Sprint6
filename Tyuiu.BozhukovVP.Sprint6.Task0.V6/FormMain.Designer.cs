@@ -28,55 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            groupBoxTask_BVP = new GroupBox();
+            textBoxTask_BVP = new TextBox();
+            pictureBox1 = new PictureBox();
+            groupBoxIn_BVP = new GroupBox();
+            textBox2 = new TextBox();
+            textBoxInput_BVP = new TextBox();
             groupBox3 = new GroupBox();
+            textBoxRes_BVP = new TextBox();
+            textBoxOutRes_BVP = new TextBox();
+            buttonAnswer_BVP = new Button();
+            buttonResult_BVP = new Button();
+            groupBoxTask_BVP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBoxIn_BVP.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxTask_BVP
             // 
-            groupBox1.Location = new Point(88, 95);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(250, 125);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBoxTask_BVP.Controls.Add(textBoxTask_BVP);
+            groupBoxTask_BVP.Controls.Add(pictureBox1);
+            groupBoxTask_BVP.Dock = DockStyle.Top;
+            groupBoxTask_BVP.Location = new Point(0, 0);
+            groupBoxTask_BVP.Name = "groupBoxTask_BVP";
+            groupBoxTask_BVP.Size = new Size(554, 294);
+            groupBoxTask_BVP.TabIndex = 0;
+            groupBoxTask_BVP.TabStop = false;
+            groupBoxTask_BVP.Text = "Условие";
             // 
-            // groupBox2
+            // textBoxTask_BVP
             // 
-            groupBox2.Location = new Point(88, 313);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(250, 125);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            textBoxTask_BVP.BackColor = SystemColors.Control;
+            textBoxTask_BVP.BorderStyle = BorderStyle.None;
+            textBoxTask_BVP.Location = new Point(36, 56);
+            textBoxTask_BVP.Name = "textBoxTask_BVP";
+            textBoxTask_BVP.ReadOnly = true;
+            textBoxTask_BVP.Size = new Size(258, 20);
+            textBoxTask_BVP.TabIndex = 6;
+            textBoxTask_BVP.Text = "Вычислить по формуле";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(314, 56);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // groupBoxIn_BVP
+            // 
+            groupBoxIn_BVP.Controls.Add(textBox2);
+            groupBoxIn_BVP.Controls.Add(textBoxInput_BVP);
+            groupBoxIn_BVP.Location = new Point(12, 300);
+            groupBoxIn_BVP.Name = "groupBoxIn_BVP";
+            groupBoxIn_BVP.Size = new Size(250, 138);
+            groupBoxIn_BVP.TabIndex = 0;
+            groupBoxIn_BVP.TabStop = false;
+            groupBoxIn_BVP.Text = "Ввод данных";
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = SystemColors.Control;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(6, 49);
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(125, 20);
+            textBox2.TabIndex = 5;
+            textBox2.Text = "Переменная X:";
+            // 
+            // textBoxInput_BVP
+            // 
+            textBoxInput_BVP.Location = new Point(6, 75);
+            textBoxInput_BVP.Name = "textBoxInput_BVP";
+            textBoxInput_BVP.Size = new Size(125, 27);
+            textBoxInput_BVP.TabIndex = 4;
             // 
             // groupBox3
             // 
-            groupBox3.Location = new Point(503, 313);
+            groupBox3.Controls.Add(textBoxRes_BVP);
+            groupBox3.Controls.Add(textBoxOutRes_BVP);
+            groupBox3.Controls.Add(buttonAnswer_BVP);
+            groupBox3.Controls.Add(buttonResult_BVP);
+            groupBox3.Location = new Point(288, 300);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(250, 125);
+            groupBox3.Size = new Size(250, 138);
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
-            groupBox3.Text = "groupBox3";
+            groupBox3.Text = "Вывод данных";
+            // 
+            // textBoxRes_BVP
+            // 
+            textBoxRes_BVP.BackColor = SystemColors.Control;
+            textBoxRes_BVP.BorderStyle = BorderStyle.None;
+            textBoxRes_BVP.Location = new Point(26, 26);
+            textBoxRes_BVP.Name = "textBoxRes_BVP";
+            textBoxRes_BVP.ReadOnly = true;
+            textBoxRes_BVP.Size = new Size(125, 20);
+            textBoxRes_BVP.TabIndex = 8;
+            textBoxRes_BVP.Text = "Результат:";
+            // 
+            // textBoxOutRes_BVP
+            // 
+            textBoxOutRes_BVP.BorderStyle = BorderStyle.FixedSingle;
+            textBoxOutRes_BVP.Location = new Point(26, 52);
+            textBoxOutRes_BVP.Name = "textBoxOutRes_BVP";
+            textBoxOutRes_BVP.ReadOnly = true;
+            textBoxOutRes_BVP.Size = new Size(168, 27);
+            textBoxOutRes_BVP.TabIndex = 7;
+            // 
+            // buttonAnswer_BVP
+            // 
+            buttonAnswer_BVP.FlatStyle = FlatStyle.Flat;
+            buttonAnswer_BVP.Location = new Point(26, 85);
+            buttonAnswer_BVP.Name = "buttonAnswer_BVP";
+            buttonAnswer_BVP.Size = new Size(40, 40);
+            buttonAnswer_BVP.TabIndex = 1;
+            buttonAnswer_BVP.Text = "?";
+            buttonAnswer_BVP.UseVisualStyleBackColor = true;
+            buttonAnswer_BVP.Click += buttonAnswer_BVP_Click;
+            // 
+            // buttonResult_BVP
+            // 
+            buttonResult_BVP.Location = new Point(88, 85);
+            buttonResult_BVP.Name = "buttonResult_BVP";
+            buttonResult_BVP.Size = new Size(106, 40);
+            buttonResult_BVP.TabIndex = 2;
+            buttonResult_BVP.Text = "Выполнить";
+            buttonResult_BVP.UseVisualStyleBackColor = true;
+            buttonResult_BVP.Click += buttonResult_BVP_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(groupBox2);
+            ClientSize = new Size(554, 450);
+            Controls.Add(groupBoxIn_BVP);
             Controls.Add(groupBox3);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBoxTask_BVP);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
             Name = "FormMain";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Спринт 6 | Таск 0 |Вариант 6 | Божуков В.П.";
+            Load += FormMain_Load;
+            groupBoxTask_BVP.ResumeLayout(false);
+            groupBoxTask_BVP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBoxIn_BVP.ResumeLayout(false);
+            groupBoxIn_BVP.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
+        private GroupBox groupBoxTask_BVP;
+        private GroupBox groupBoxIn_BVP;
         private GroupBox groupBox3;
+        private TextBox textBoxTask_BVP;
+        private TextBox textBox2;
+        private TextBox textBoxInput_BVP;
+        private TextBox textBoxOutRes_BVP;
+        private Button buttonAnswer_BVP;
+        private Button buttonResult_BVP;
+        private PictureBox pictureBox1;
+        private TextBox textBoxRes_BVP;
     }
 }
