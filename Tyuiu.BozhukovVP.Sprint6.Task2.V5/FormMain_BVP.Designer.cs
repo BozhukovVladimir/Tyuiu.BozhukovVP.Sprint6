@@ -94,6 +94,7 @@
             dataGridView_BVP.Columns.AddRange(new DataGridViewColumn[] { ColumnX, ColumnF });
             dataGridView_BVP.Location = new Point(6, 27);
             dataGridView_BVP.Name = "dataGridView_BVP";
+            dataGridView_BVP.RowHeadersVisible = false;
             dataGridView_BVP.RowHeadersWidth = 51;
             dataGridView_BVP.Size = new Size(300, 388);
             dataGridView_BVP.TabIndex = 0;
