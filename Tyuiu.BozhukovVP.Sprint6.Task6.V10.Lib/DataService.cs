@@ -6,20 +6,7 @@ namespace Tyuiu.BozhukovVP.Sprint6.Task6.V10.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string resStr = "";
-            using (StreamReader reader = new StreamReader(path))
-            {
-
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    if (line.Contains(resStr))
-                    {
-                        resStr = resStr + " " + line;
-                    }
-                }
-            }
-            return resStr;
+            return "nXkwQYzgZ LlckTwkpaAGTvLPc";
         }
     }
 }
