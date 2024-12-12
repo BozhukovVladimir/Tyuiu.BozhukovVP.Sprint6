@@ -2,7 +2,7 @@
 using System.IO;
 namespace Tyuiu.BozhukovVP.Sprint6.Task6.V10.Lib
 {
-    public class DataService
+    public class DataService : ISprint6Task6V10
     {
         public string CollectTextFromFile(string str, string path)
         {
