@@ -4,7 +4,7 @@ namespace Tyuiu.BozhukovVP.Sprint6.Task6.V10.Lib
 {
     public class DataService : ISprint6Task6V10
     {
-        public string CollectTextFromFile(string str, string path)
+        public string CollectTextFromFile(string path)
         {
             string resStr = "";
             using (StreamReader reader = new StreamReader(path))
@@ -13,7 +13,7 @@ namespace Tyuiu.BozhukovVP.Sprint6.Task6.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains(str))
+                    if (line.Contains(resStr))
                     {
                         resStr = resStr + " " + line;
                     }
