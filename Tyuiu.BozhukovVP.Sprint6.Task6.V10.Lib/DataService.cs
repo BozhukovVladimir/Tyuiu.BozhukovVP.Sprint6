@@ -13,7 +13,7 @@ namespace Tyuiu.BozhukovVP.Sprint6.Task6.V10.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    if (line.Contains(path))
+                    if (line.Contains(resStr))
                     {
                         resStr = resStr + " " + line;
                     }
